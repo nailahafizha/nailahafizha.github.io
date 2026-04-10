@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Beranda</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --main-color: #eef9ff;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #ffffff;
+        }
+
+        .custom-navbar {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+        }
+
+        .custom-card {
+            background-color: var(--main-color);
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid var(--main-color);
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar m-3 rounded">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Portofolio</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="beranda.html">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profil.html">Profil</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 pt-5">
+    <div class="card custom-card text-center shadow p-4 position-relative">
+
+        <img src="foto.jpeg" 
+            class="profile-img position-absolute start-50 translate-middle"
+            style="top:0;">
+
+        <div class="mt-5 pt-5">
+            <h2 class="fw-bold">Naila Hafizha<br>2408107010026</h2>
+            <p>
+                Selamat datang di website personal saya.
+                Di sini Anda dapat mengetahui informasi lebih lanjut tentang saya.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
